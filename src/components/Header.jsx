@@ -255,7 +255,15 @@ export default function Header() {
                 Hello, {user.displayName ?? user.email}
               </Button>
             ) : (
-              <Button color="inherit">Login</Button>
+              <Button color="inherit">
+                <Link
+                  to="/login"
+                  color="inherit"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  login
+                </Link>
+              </Button>
             )}
           </Box>
         </Toolbar>
